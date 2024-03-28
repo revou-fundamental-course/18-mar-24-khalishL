@@ -1,37 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment Khalish</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/site_logo.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>Jalan-Jalan Yuk</title>
+    <!-- styles -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link rel="stylesheet" media="screen and (min-width: 600px)" href="css/widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/smallscreen.css">
 </head>
+
 <body>
-    <header class="header-container">
-        <section class="logo-icon"></section>
-
-        <section class="nav-container">
-            <button>Home</button>
-            <button>Our Page</button>
-            <button>Call Us</button>
-        
-        </section>
-    </header>
-    <hr>
-    <section class="section-container">
-        <header>
-            
-            <h1> Ini Title</h1>
-            <h3>Ini subtitle</h3>
-
-        </header>
-        
-        <div class="section-content-container">
-             <!-- bwt banner auto slide --> 
-             <div style="height:200px; width:100%; background-color: rgb(89, 196, 137)"></div> 
-            <!-- bwt form  -->
-            <div style="height:200px; width: 100%;background-color: rgb(74, 116, 206)"></div>
+    <!-- navigation -->
+    <nav>
+        <div class="logo">
+            <a href="#top">
+                <div class="logo"><img src="./img/site_logo.png" alt="logo" id="logo_image"></div>
+            </a>
+            <h4>Jalan-Jalan Yuk</h4>
         </div>
-    </section> 
+        <ul class="cart">
+            <li>
+                <div class="title">
+                    <h2>Tujuan Liburan</h2>
+                </div>
+            </li>
+            <li>
+                <div class="cart-items">
+                    
+                </div>
+            </li>
+            <li>
+
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$ 0</span>
+                </div>
+            </li>
+            <li>
+                <button class="btn btn-primary btn-purchase" type="button">
+                    PURCHASE
+                </button>
+            </li>
+        </ul>
+       
+        <div class="shopping-cart">
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </div>
+        <!-- <div class="menu-button">
+            <button >Home</button>
+            <button >Package</button>
+            <button >Call to Action</button>
+        </div> -->
+        <div class="menu-button">
+            <button onclick="scrollToSection('top')">Home</button>
+            <button onclick="scrollToSection('pilihan')">Package</button>
+            <button onclick="scrollToSection('pilihan-paket')">Destinasi</button>
+        </div>
+    </nav>
+    <!-- ./navigation -->
+
+    <div class="main-page" id="top">
+        <!-- hero -->
+        <div class="banner">
+            <div class="container">
+                <div class="banner-content">
+                    <h1>Liburan eksklusif, harga ekonomis</h1>
+                    <p>
+                        Dapatkan berbagai paket liburan eksklusif hanya di Jalan-Jalan Yuk. Atur destinasi sesuai
+                        keinginanmu dan rasakan pengalaman berlibur yang tidak pernah kamu alami sebelumnya.
+                    </p>
+                    <!-- <h6 class="photo-attribution">Photo by Leah Kelley from Pexels</h6> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="slider" class="pilihan" id="pilihan">
+            <div class="slide current">
+                <div class="content">
+                    <h1 style="color: black;">Slide One</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab ad alias, veritatis
+                        inventore quia!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Two</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab ad alias, veritatis
+                        inventore quia!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Three</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab ad alias, veritatis
+                        inventore quia!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Four</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab ad alias, veritatis
+                        inventore quia!</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div id="prev"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
+            <div id="next"><i class="fa fa-arrow-right" aria-hidden="true"></i></div>
+        </div>
+
+       
+        <!-- 
+<div class="slider">
+  <div class="slides"> -->
+        <!-- radio buttons -->
+        <!-- <input type="radio" name="radio-btn" id="radio1">
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+    <input type="radio" name="radio-btn" id="radio4"> -->
+        <!-- radio buttons -->
+
+        <!-- slide images -->
+        <!-- <div class="slide first">
+      <img src="./img/slider1.jpg" alt="slider1">
+    </div>
+    <div class="slide">
+      <img src="./img/slider2.jpg" alt="slider1">
+    </div>
+    <div class="slide">
+      <img src="./img/slider3.jpg" alt="slider1">
+    </div>
+    <div class="slide">
+      <img src="./img/slider4.jpg" alt="slider1">
+    </div> -->
+        <!-- ./slide images -->
+
+        <!-- automatic navigation -->
+        <!-- <div class="navigation-auto">
+      <div class="auto-btn1"></div>
+      <div class="auto-btn2"></div>
+      <div class="auto-btn3"></div>
+      <div class="auto-btn4"></div>
+    </div> -->
+        <!-- ./automatic navigation -->
+        <!-- </div> -->
+        <!-- manual navigation -->
+        <!-- <div class="navigation-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+
+</div> -->
+
+        <!-- ./hero -->
+
+        <!-- <div class="separator"></div> -->
+
+
+
+
+
+        <!-- pilihan -->
+        <section class="pilihan-paket" id="pilihan-paket">
+            <div class="title" >
+                <h2>Pilihan Paket Liburan</h2>
+            </div>
+            <div class="section-center">
+
+                <!-- Eropa -->
+                <article class="paket">
+                    <!-- judul paket -->
+                    <div class="paket-title">
+                        <p>Eropa</p>
+                        <button type="button" class="paket-btn">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- text paket -->
+                    <div class="paket-text">
+                        <!-- <p>
+          Ini dia paket spesial ke Eropa. wuhu
+        </p> -->
+                        <div class="group-negara">
+                            <div class="negara shop-item perancis">
+                                <h3 class="shop-item-title">Perancis</h3>
+                                <p class="shop-item-price">$ 1000</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item italia">
+                                <h3 class="shop-item-title">Italia</h3>
+                                <p class="shop-item-price">$ 800</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item spanyol">
+                                <h3 class="shop-item-title">Spanyol</h3>
+                                <p class="shop-item-price">$ 900</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item yunani">
+                                <h3 class="shop-item-title">Yunani</h3>
+                                <p class="shop-item-price">$ 700</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item austria">
+                                <h3 class="shop-item-title">Austria</h3>
+                                <p class="shop-item-price">$ 1100</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item inggris">
+                                <h3 class="shop-item-title">Inggris</h3>
+                                <p class="shop-item-price">$ 1050</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Asia -->
+                <article class="paket">
+                    <!-- judul paket -->
+                    <div class="paket-title">
+                        <p>Asia</p>
+                        <button type="button" class="paket-btn">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- text paket -->
+                    <div class="paket-text">
+                        <!-- <p>
+          Ini dia paket spesial ke Asia.
+        </p> -->
+                        <div class="group-negara" >
+                            <div class="negara shop-item korea">
+                                <h3 class="shop-item-title">Korea Selatan</h3>
+                                <p class="shop-item-price">$ 700</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item jepang">
+                                <h3 class="shop-item-title">Jepang</h3>
+                                <p class="shop-item-price">$ 750</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item singapura">
+                                <h3 class="shop-item-title">Singapura</h3>
+                                <p class="shop-item-price">$ 100</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item malaysia">
+                                <h3 class="shop-item-title">Malaysia</h3>
+                                <p class="shop-item-price">$ 100</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Timur Tengah -->
+                <article class="paket">
+                    <!-- judul paket -->
+                    <div class="paket-title">
+                        <p>Timur Tengah dan Afrika</p>
+                        <button type="button" class="paket-btn">
+                            <span class="plus-icon">
+                                <i class="far fa-plus-square"></i>
+                            </span>
+                            <span class="minus-icon">
+                                <i class="far fa-minus-square"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <!-- text paket -->
+                    <div class="paket-text">
+                        <!-- <p>
+          Ini dia paket spesial ke Timur Tengah.
+        </p> -->
+                        <div class="group-negara">
+                            <div class="negara shop-item maroko">
+                                <h3 class="shop-item-title">Maroko</h3>
+                                <p class="shop-item-price">$ 800</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div class="negara shop-item mesir">
+                                <h3 class="shop-item-title">Mesir</h3>
+                                <p class="shop-item-price">$ 900</p>
+                                <button type="button" class="negara-btn shop-item-button">
+                                    <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </div>
+    <!-- ./pilihan -->
+
+    <footer >
+        <h5>copyright &copy; Khalish luthfi (Revou mini Coding Project 2024)</h5>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
 </body>
-</html> 
+
+</html>

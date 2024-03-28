@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+c
+
+#logo_image {
+  width: 50px;
+  margin-right: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #FFFBFE;
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 0.8rem;
+}
+h4 {
+  font-size: 0.675em;
+}
+p {
+  margin-bottom: 1.25rem;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  padding: 1em 0;
+  top: 0;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  background-color: #3066BE;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #FFFBFE;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.cart {
+  display: flex;
+  justify-content: flex-start;
+  width: 40%;
+  padding-top: 0px;
+  overflow: scroll;
+}
+
+.cart li {
+  list-style: none;
+}
+
+.cart a {
+  color: #FFFBFE;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: 100;
+  margin: 50px auto;
+}
+
+.shopping-cart {
+  cursor: pointer;
+  color: #FFFBFE;
+  transition: all 0.3s ease;
+  display: block;
+}
+
+.shopping-cart:hover {
+  transform: scale(1.2);
+  color: #DB5461;
+}
+
+.banner {
+  margin-top: 10vh;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.05), 
+    rgba(0, 0, 0, 0.35)
+  ), url("/img/hero-image2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 24em;
+}
+
+.banner h1 {
+  line-height: 1em;
+  margin-bottom: 0.3em;
+  font-size: 2em;
+}
+
+.banner p {
+  font-size: 0.8em;
+  align-items: center;
+}
+
+.banner-content {
+  color: #FFFBFE;
+  padding-top: 10vh;
+  width: 80vw;
+  
+}
+
+.separator {
+  margin-top: 200px;
+}
+
+  body {
+    overflow-x: hidden;  
+  }
+
+  .cart {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 10vh;
+    background-color: #071013;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .cart .title {
+    color: #FFFBFE;
+    margin-top: 100px;
+  }
+
+.cart-active {
+  transform: translateX(0%);
+}
+
+
+body {
+  background-color: #FFFBFE;
+}
+
+.title {
+  margin-top: 15vh;
+  margin-bottom: 4rem;
+}
+
+.title h2 {
+  text-align: center;
+}
+
+.btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color:  #DB5461;
+  transition: all 0.3s linear;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.paket {
+  background: #FFFBFE;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+.paket-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+}
+.paket-title p {
+  margin-bottom: 0;
+  letter-spacing: 0.25rem;
+  color: #071013;
+}
+.paket-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color:  #3066BE;
+  transition: all 0.3s linear;
+}
+.paket-btn:hover {
+  transform: rotate(90deg);
+}
+
+.paket-text {
+  padding: 1rem 0 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  
+}
+.paket-text p {
+  margin-bottom: 0;
+  color: #071013;
+}
+
+.paket-text h4 {
+  color: #071013;
+}
+
+.group-negara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.negara {
+  background: #FFFBFE;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.negara p {
+  font-size: 0.7em;
+  margin-left: auto;
+  margin-right: 10vw;
+}
+
+.negara-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color:  #DB5461;
+  transition: all 0.3s linear;
+}
+
+.negara-btn:hover {
+  transform: scale(1.2);
+}
+
+.paket-text {
+  display: none;
+}
+
+.show-text .paket-text {
+  display: block;
+}
+.minus-icon {
+  display: none;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+.show-text .plus-icon {
+  display: none;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+  align-items: center;
+  margin: 5px auto;
+  width: 95%;
+  background-color: #FFFBFE;
+  border-radius: 0.5em;
+}
+
+.cart-item {
+  width: 40%;
+}
+
+.cart-price {
+  width: 15%;
+  font-size: 0.8em;
+  color: #3066BE;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #071013;
+  margin-left: 2em;
+  font-size: 0.8em;
+  font-weight: 800;
+}
+
+.btn-danger {
+  color: #DB5461;
+}
+
+.btn-danger:hover {
+  color: #c74451;
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #3066BE;
+  background-color: #eee;
+  color: #071013;
+  padding: 0;
+  text-align: center;
+  font-size: 1em;
+  margin-right: 25px;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 25px;
+}
+
+.cart-total-title {
+  color: #FFFBFE;
+  font-weight: bold;
+  font-size: 1em;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #FFFBFE;
+  margin-top: 15px;
+  font-size: 1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 30px auto 120px auto;
+  font-size: 0.8em;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #60AFFF;
+  border: none;
+  border-radius: .3em;
+  font-weight: bold;
+  padding: 1em;
+}
+
+.btn-primary:hover {
+  background-color: #3066BE;
+}
+
+footer {
+  color: #FFFBFE;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #071013;
+  position: block;
+  width: 100%;
+  bottom: 0;
+  margin-top: 130px;
+}
+
+.perancis {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/perancis.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.italia {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/italia.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.spanyol {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/spanyol.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.yunani {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/yunani.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.austria {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/austria.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.inggris {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/inggris.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.korea {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/korea.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.jepang {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/jepang.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.singapura {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/singapura.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.malaysia {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/malaysia.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.maroko {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/maroko.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.mesir {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.75), 
+    rgba(241, 228, 243, 0.65)
+  ), url("/img/mesir.jpg") no-repeat center center;
+  background-size: cover;
+}
